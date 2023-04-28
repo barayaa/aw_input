@@ -25,7 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },
@@ -93,6 +94,42 @@
           }
         }
       }
+    },
+    "aw-input": {
+      "projectType": "library",
+      "root": "projects/aw-input",
+      "sourceRoot": "projects/aw-input/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/aw-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/aw-input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/aw-input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/aw-input/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "27b2e959-1917-4a8a-9955-b70cc671d0fd"
   }
 }
