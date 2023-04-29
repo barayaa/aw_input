@@ -3,5 +3,12 @@
   "dest": "../../dist/aw-input",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": [
+    {
+      "glob": "**/*",
+      "input": "./node_modules/font-awesome/css/",
+      "output": "/font-awesome/"
+    }
+  ]
 }

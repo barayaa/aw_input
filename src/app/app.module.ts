@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {AwInputModule} from 'aw-input'
+// import {AwInputModule} from 'aw-input'
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import {AwInputModule} from 'aw-input'
   ],
   imports: [
     BrowserModule,
-    AwInputModule,
+    // AwInputModule
     AppRoutingModule
   ],
   providers: [],
